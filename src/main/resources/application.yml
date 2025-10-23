@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: springboot-rabbitmq-tutorial
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+
+    queue:
+      name: javaguides
+      json:
+        name: javaguide_json
+    exchange:
+      name: javaguide_exchange
+    routing-key: javaguide_routing_key
+    routing-json-key: javaguide_routing_json_key
